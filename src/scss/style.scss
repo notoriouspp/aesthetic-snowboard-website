@@ -1,0 +1,135 @@
+$primary-color-dark:   #212121;
+$primary-color:        #333333;
+$primary-color-light:  #848484;
+$accent-color-dark:    #367385;
+$accent-color:         #5bc0de;
+$accent-color-light:   #9cd9eb;
+$primary-color-text:   #FFFFFF;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+$segment-height: 20vw;
+$min-segment-height: 30em;
+
+//My Stuff
+
+.segment {
+    height: $segment-height;
+    min-height: $min-segment-height;
+}
+
+body {
+    background: $accent-color;
+    font-family: 'Open Sans Condensed', sans-serif;    
+}
+
+.billboard {
+    @extend .segment;
+    color: $primary-color-text;
+    text-shadow: 0 .05rem .1rem $secondary-text-color;
+    background-image: url("https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?dpr=1&auto=compress,format&fit=crop&w=3750&h=&q=80&cs=tinysrgb&crop=");
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+#mainnavbar {
+    background-color: $primary-color;
+}
+
+#mainnavbar a {
+    color: $accent-color;
+}
+
+#mainnavbar a:hover {
+    color: $accent-color-light;
+}
+
+#mainnavbar a:active {
+    color: $accent-color-dark;
+}
+
+.billboard-text {
+    background: rgba(112, 66, 20, 0.25);
+    padding: 10px;
+    height: 32rem;       
+}
+
+.nav-text {
+    color: $primary-color-text;
+    font-weight: bold;
+}
+
+.main-image-logo {
+    background-color: transparent;
+}
+
+.headliner {
+    min-height: $min-segment-height;
+    background-size: cover;
+    padding: 1px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.products-heading {
+    @extend .headliner;
+    background-image: url("http://cdn.snowboarding.transworld.net/blogs.dir/442/files/2017/09/15-HalldorHelgason-LaaxSwitzerland-Arcadia-Cyril-Mueller-PM-0791.jpg");
+
+}
+
+.customize-heading {
+    @extend .headliner;
+    background-image: url("http://www.powderheadz.com/wp-content/uploads/2016/11/Best-All-Mountain-Snowboard-Bindings.jpg");
+}
+
+.story-heading {
+    @extend .headliner;
+    background-image: url("https://images.unsplash.com/photo-1498611291069-aa296192f1e4?dpr=1&auto=compress,format&fit=crop&w=3750&h=&q=80&cs=tinysrgb&crop=");
+}
+
+.spacer-container {
+    @extend .headliner;
+    background-image: url("https://coresites-cdn.factorymedia.com/whitelines_new/wp-content/uploads/2014/10/Best-snowboards-whitelines-2014-2015-intro.jpg");
+    width: 100%;
+    z-index: 10;
+    background-position: center bottom; 
+    background-attachment:fixed;
+}
+
+.divider-main {
+    height: 1px;
+    margin: 0px;
+}
+
+/* Tablet and bigger */
+@media ( min-width: 768px ) {
+    .products-heading {
+        border-right:2px solid $accent-color;
+    }
+    .customize-heading {
+        background-position-x: center;
+        border-right:2px solid $accent-color;
+    }
+    .spacer-container {
+        border-width: 0px 1px 1px 1px;
+        border-color: $accent-color;
+        border-style: solid;
+    }
+}
+
+/* Mobile and smaller */
+@media (max-width: 768px) {
+    .products-heading {
+        border-bottom:2px solid $accent-color;
+    }
+    .customize-heading {
+        background-position-x: center;
+        border-bottom:2px solid $accent-color;
+    }
+    .spacer-container {
+        border-width: 0px 1px 1px 1px;
+        border-color: $accent-color;
+        border-style: solid;
+    }
+}

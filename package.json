@@ -1,0 +1,20 @@
+{
+  "name": "aesthetic-snowboards-project",
+  "version": "1.0.0",
+  "description": "The offical Aesthetic Snowboard webiste.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bobby Plunkett",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-order": "^1.1.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

@@ -1,0 +1,89 @@
+.segment, .billboard {
+  height: 20vw;
+  min-height: 30em; }
+
+body {
+  background: #5bc0de;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+.billboard {
+  color: #FFFFFF;
+  text-shadow: 0 0.05rem 0.1rem #757575;
+  background-image: url("https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?dpr=1&auto=compress,format&fit=crop&w=3750&h=&q=80&cs=tinysrgb&crop=");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#mainnavbar {
+  background-color: #333333; }
+
+#mainnavbar a {
+  color: #5bc0de; }
+
+#mainnavbar a:hover {
+  color: #9cd9eb; }
+
+#mainnavbar a:active {
+  color: #367385; }
+
+.billboard-text {
+  background: rgba(112, 66, 20, 0.25);
+  padding: 10px;
+  height: 32rem; }
+
+.nav-text {
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.main-image-logo {
+  background-color: transparent; }
+
+.headliner, .products-heading, .customize-heading, .story-heading, .spacer-container {
+  min-height: 30em;
+  background-size: cover;
+  padding: 1px;
+  overflow: hidden;
+  width: 100%; }
+
+.products-heading {
+  background-image: url("http://cdn.snowboarding.transworld.net/blogs.dir/442/files/2017/09/15-HalldorHelgason-LaaxSwitzerland-Arcadia-Cyril-Mueller-PM-0791.jpg"); }
+
+.customize-heading {
+  background-image: url("http://www.powderheadz.com/wp-content/uploads/2016/11/Best-All-Mountain-Snowboard-Bindings.jpg"); }
+
+.story-heading {
+  background-image: url("https://images.unsplash.com/photo-1498611291069-aa296192f1e4?dpr=1&auto=compress,format&fit=crop&w=3750&h=&q=80&cs=tinysrgb&crop="); }
+
+.spacer-container {
+  background-image: url("https://coresites-cdn.factorymedia.com/whitelines_new/wp-content/uploads/2014/10/Best-snowboards-whitelines-2014-2015-intro.jpg");
+  width: 100%;
+  z-index: 10;
+  background-position: center bottom;
+  background-attachment: fixed; }
+
+.divider-main {
+  height: 1px;
+  margin: 0px; }
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+  .products-heading {
+    border-right: 2px solid #5bc0de; }
+  .customize-heading {
+    background-position-x: center;
+    border-right: 2px solid #5bc0de; }
+  .spacer-container {
+    border-width: 0px 1px 1px 1px;
+    border-color: #5bc0de;
+    border-style: solid; } }
+
+/* Mobile and smaller */
+@media (max-width: 768px) {
+  .products-heading {
+    border-bottom: 2px solid #5bc0de; }
+  .customize-heading {
+    background-position-x: center;
+    border-bottom: 2px solid #5bc0de; }
+  .spacer-container {
+    border-width: 0px 1px 1px 1px;
+    border-color: #5bc0de;
+    border-style: solid; } }
