@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Megrim");
+.text-decoration {
+  color: #FFFFFF; }
+
+.list-group {
+  padding-left: 0;
+  margin-bottom: 20px; }
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 2px 15px;
+  margin-bottom: -1px;
+  margin-left: -15px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: white; }
+
 .segment, .billboard {
   height: 20vw;
   min-height: 30em; }
@@ -12,6 +30,28 @@ body {
   background-image: url("https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?dpr=1&auto=compress,format&fit=crop&w=3750&h=&q=80&cs=tinysrgb&crop=");
   background-repeat: no-repeat;
   background-position: center center; }
+
+.billboard-overlay {
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  background-color: rgba(0, 0, 0, 0.75); }
+
+.billboard-overlay:hover, .billboard-overlay:hover .billboard-info {
+  opacity: 0; }
+
+.billboard-info {
+  -moz-transition: opacity .15s ease-out;
+  -o-transition: opacity .15s ease-out;
+  -webkit-transition: opacity .15s ease-out;
+  transition: opacity .15s ease-out;
+  -moz-transition: opacity .5s ease-in;
+  -o-transition: opacity .5s ease-in;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+  position: center;
+  font-family: 'Megrim', cursive; }
 
 #mainnavbar {
   background-color: #333333; }
@@ -78,9 +118,15 @@ body {
 
 /* Mobile and smaller */
 @media (max-width: 768px) {
+  .sideBorders, .products-heading, .customize-heading, .story-heading {
+    border-right: 1px solid #5bc0de;
+    border-left: 1px solid #5bc0de; }
   .products-heading {
     border-bottom: 2px solid #5bc0de; }
   .customize-heading {
+    background-position-x: center;
+    border-bottom: 2px solid #5bc0de; }
+  .story-heading {
     background-position-x: center;
     border-bottom: 2px solid #5bc0de; }
   .spacer-container {
