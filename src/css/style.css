@@ -1,31 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Megrim");
-.text-decoration {
-  color: #FFFFFF; }
+body {
+  background: #5bc0de;
+  font-family: 'Open Sans Condensed', sans-serif; }
 
-.list-group {
-  padding-left: 0;
-  margin-bottom: 20px; }
+.divider-main {
+  height: 1px;
+  margin: 0px; }
 
-.list-group-item {
-  position: relative;
-  display: block;
-  padding: 2px 15px;
-  margin-bottom: -1px;
-  margin-left: -15px;
-  background-color: transparent;
-  border: 1px solid transparent;
-  color: white; }
+.text-decoration, .billboard {
+  color: #DDDDDD; }
 
 .segment, .billboard {
   height: 20vw;
   min-height: 30em; }
 
-body {
-  background: #5bc0de;
-  font-family: 'Open Sans Condensed', sans-serif; }
+.main-color {
+  background-color: #333333; }
+
+.main-image-logo {
+  background-color: transparent; }
 
 .billboard {
-  color: #FFFFFF;
   text-shadow: 0 0.05rem 0.1rem #757575;
   background-image: url("https://images.unsplash.com/photo-1478700485868-972b69dc3fc4?dpr=1&auto=compress,format&fit=crop&w=3750&h=&q=80&cs=tinysrgb&crop=");
   background-repeat: no-repeat;
@@ -37,6 +32,11 @@ body {
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   background-color: rgba(0, 0, 0, 0.75); }
+
+.billboard-text {
+  background: rgba(112, 66, 20, 0.25);
+  padding: 10px;
+  height: 32rem; }
 
 .billboard-overlay:hover, .billboard-overlay:hover .billboard-info {
   opacity: 0; }
@@ -53,29 +53,19 @@ body {
   position: center;
   font-family: 'Megrim', cursive; }
 
-#mainnavbar {
-  background-color: #333333; }
+.list-group {
+  padding-left: 0;
+  margin-bottom: 20px; }
 
-#mainnavbar a {
-  color: #5bc0de; }
-
-#mainnavbar a:hover {
-  color: #9cd9eb; }
-
-#mainnavbar a:active {
-  color: #367385; }
-
-.billboard-text {
-  background: rgba(112, 66, 20, 0.25);
-  padding: 10px;
-  height: 32rem; }
-
-.nav-text {
-  color: #FFFFFF;
-  font-weight: bold; }
-
-.main-image-logo {
-  background-color: transparent; }
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 2px 15px;
+  margin-bottom: -1px;
+  margin-left: -15px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: white; }
 
 .headliner, .products-heading, .customize-heading, .story-heading, .spacer-container {
   min-height: 30em;
@@ -100,9 +90,11 @@ body {
   background-position: center bottom;
   background-attachment: fixed; }
 
-.divider-main {
-  height: 1px;
-  margin: 0px; }
+.navbar {
+  background-color: #333333; }
+
+.nav-link {
+  color: #5bc0de; }
 
 /* Tablet and bigger */
 @media (min-width: 768px) {

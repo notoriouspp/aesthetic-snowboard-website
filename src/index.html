@@ -8,38 +8,37 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/bundle.css">
     </head>
 
     <body>
         <!-- Navigation Bar -->
-        <nav id="mainnavbar" class="navbar navbar-toggleable-md navbar-light bg-faded main-nav-bar">
+        <nav id="mainnavbar" class="navbar navbar-toggleable-md navbar-dark bg-faded main-nav-bar fixed-top">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img src="assets/img/company-logo.png" height="30" class="d-inline-block align-top" alt="">
+                <div class="billboard-info text-decoration"><strong>Aesthetic</strong></div> 
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-dark nav-text" href="#">Products</a>
+                        <a class="nav-item nav-link" href="products.html">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark nav-text" href="#">Customize</a>
+                        <a class="nav-item nav-link" href="#">Customize</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark nav-text" href="#">Our Story</a>
+                        <a class="nav-item nav-link" href="#">Our Story</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark nav-text" href="#">Meet Our Team</a>
+                        <a class="nav-item nav-link" href="#">Meet Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark nav-text" href="#">Memories</a>
+                        <a class="nav-item nav-link" href="#">Memories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark nav-text" href="#">Contact Us</a>
+                        <a class="nav-item nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -62,24 +61,30 @@
             <hr class="divider-main">
             <!-- Heading Container -->
             <div class="row no-gutters">
-                <div class="col-lg-4 products-heading">
-                    <h2>Products</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <div class="col-lg-4 products-heading pt-0">
+                    <div class="container shadow-box">
+                        <h2 class="text-decoration">Our Products</h2>
+                        <p class="text-decoration">Looking for something to shred some fresh pow? Or stomp a jib in the park? We got you covered! Buy directly from us! Save money, and get even better customer service!</p>
+                        <p><a class="btn btn-secondary mb-2" href="products.html" role="button">Products &raquo;</a></p>
+                    </div>
                 </div>
-                <div class="col-lg-4 customize-heading">
-                    <h2>Customize</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <div class="col-lg-4 customize-heading  pt-0">
+                    <div class="container shadow-box">
+                        <h2 class="text-decoration">Customize Your Board</h2>
+                        <p class="text-decoration">Ever wanted a board, just to find the graphics not appealing? We're here to fix that problem! Choose your board, feel, and design using our customization tool! So you can get the board you always wanted!</p>
+                        <p><a class="btn btn-secondary mb-2" href="products.html" role="button">Customize &raquo;</a></p>
+                    </div>
                 </div>
-                <div class="col-lg-4 story-heading">
-                    <h2>Our Story</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <div class="col-lg-4 story-heading  pt-0">
+                    <div class="container shadow-box">
+                        <h2 class="text-decoration">Our Story</h2>
+                        <p class="text-decoration">Confucius once said “Choose a job you love, and you will never have to work a day in your life”, and it has stood true since we started. We love what we do, and we hope our products make the sport we love just as enjoyable as we find it!</p>
+                        <p><a class="btn btn-secondary mb-2" href="products.html" role="button">Learn More &raquo;</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer class="text-muted">
+        <footer class="text-muted main-color">
             <div class="container-fluid">
                 <!-- Three columns of text below the carousel -->
                 <div class="row justify-content-start">
@@ -103,19 +108,19 @@
                                 <i class="fa fa-question" aria-hidden="true"></i>
                                 &nbsp;&nbsp;&nbsp;&nbsp;Frequently Asked Questions
                             </a>
-                            <a href="#" class="list-group-item">
+                            <a href="#" class="list-group-item footer-list-item">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 &nbsp;&nbsp;&nbsp;Warranty
                             </a>
-                            <a href="#" class="list-group-item">
+                            <a href="#" class="list-group-item footer-list-item">
                                 <i class="fa fa-truck" aria-hidden="true"></i>
                                 &nbsp;&nbsp;Shipping Information
                             </a>
-                            <a href="#" class="list-group-item">
+                            <a href="#" class="list-group-item footer-list-item">
                                 <i class="fa fa-retweet" aria-hidden="true"></i>
                                 &nbsp;&nbsp;Returns and Exchanges
                             </a>
-                            <a href="#" class="list-group-item">
+                            <a href="#" class="list-group-item footer-list-item">
                                 <i class="fa fa-exclamation" aria-hidden="true"></i>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private Policy
                             </a>
@@ -123,13 +128,16 @@
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
                         <p class="h4 text-decoration">Contact Us</p>
-                        <p class="text-decoration">
+                        <p class="text-decoration mb-2">
                             Aesthetic Snowboards<br/>
                             00420 Gnar Ave.<br/>
                             Los Angeles, CA<br/>
                             13337
                         </p>
-               
+                        <button type="button" class="btn btn-secondary" href="#">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            Email Us
+                        </button >
                     </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
             </div>
